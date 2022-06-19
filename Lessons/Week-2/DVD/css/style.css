@@ -1,0 +1,32 @@
+#dvd {
+    width: 100px;
+    height: 100px;
+    animation: dvd 20s ease-in-out 0s alternate infinite;
+    border-radius: 50px;
+}
+body {
+    background-color: black;
+}
+@keyframes dvd {
+    0% {
+        background-color: red;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    25% {
+        background-color: blueviolet;
+        margin-left: 1330px;
+        margin-top: 100px;
+    }
+    75% {
+        background-color: goldenrod;
+       margin-left: 0px;
+        margin-top: 510px;
+    }
+    100% {
+        background-color: blue;
+        margin-left: 359px;
+        margin-top: 700px;
+        
+    }
+}

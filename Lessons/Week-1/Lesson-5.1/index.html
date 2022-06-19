@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ! БЭМ -->
+    <!-- TODO Блок - характеризует смысл, но не состояние -->
+    <!-- Если два слова, можно через дефиз(kebab-case), camelCase, нижнее подчеркивание (snake_case) -->
+    <div class="navbar">
+        <!-- <div class="navbar_left-top">logo</div> -->
+        <!-- TODO Элемент - составная часть блока, отдельно не может существовать. Характеризует смысл, но не состояние. (Не обязательный!) -->
+        <!-- ? имя-блока__имя-элемента -->
+        <div class="navbar__left">
+            <!-- TODO Модификатор - определяет внешний вид, состояние или поведение блока либо элемента -->
+            <div class="navbar__left_left-top"></div>
+        </div>
+    </div>
+
+    <!-- ! Table -->
+    <Table border="1">
+        <!-- thead - шапка таблицы -->
+        <thead>
+            <!-- tr - записи в строку -->
+            <tr>
+                <!-- th - записи в ряд(ячейки), жирный шрифт -->
+                <th>Курсы</th>
+                <th>Группы</th>
+            </tr>
+        </thead>
+        <!-- tbody - основная часть таблицы -->
+        <tbody>
+            <tr>
+                <!-- td - записи в ряд(ячейка), обычный шрифт -->
+                <td>JavaScript</td>
+                <td>JS 20</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>PY 20</td>
+            </tr>
+        </tbody>
+        <!-- нижняя часть таблицы -->
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>2</th>
+            </tr>
+        </tfoot>
+    </Table>
+    <br>
+    <!--! FORM -->
+    <input type="text">
+    <button>Send</button>
+    <form>
+        <input minlength="5" required type="text" placeholder="Введите имя"
+        oninvalid="this.setCustomValidity('wow!')"
+        >
+        <button>Send</button>
+    </form>
+</body>
+</html>

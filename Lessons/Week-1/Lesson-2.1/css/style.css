@@ -1,0 +1,48 @@
+ /* универсальный селектор */
+ *{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ body{
+     background-image: url(https://vesti.kg/images/sadyrr/271176362_4770200209693284_4178399463002623931_n.jpg);
+     background-size: 85%;
+ }
+ /*  Свойство значения */
+h1 {
+color: red;
+margin: 30px 15px 20px 10px;
+/* margin-left: 30px; */
+padding: 20px 50px;
+/* padding-right: 30px; */
+border: 1px solid black;
+/* display: inline; */
+}
+
+/* селектор по атрибуту */
+[name]{
+    color: red;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    display: block;
+}
+/* Селектор по классу */
+.classSpan{
+    background-color: red;
+    color: white;
+    font-size: 700;
+}
+
+/* Селектор по ID */
+#block-1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color:red;
+    margin-left: 50px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

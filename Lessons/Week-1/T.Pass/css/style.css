@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: #0F2336;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #0F2336;
+}
+ nav{
+     height: 110px;
+     width: 100%;
+     display: flex ;
+     justify-content: center;
+     align-items: center ;
+ }
+ .nav-inner {
+     width: 1240px;
+     height: 50px;
+     padding: 0 50px;
+     display: flex;
+     justify-content: space-between;
+
+ }
+ .nav-inner-list{
+     width: 410px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .nav-inner-list p{
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .nav-inner-list button{
+     width: 122px;
+     height: 50px;
+     background-color: #0F2336;
+     color: white;
+     border: 1px solid #0F2336;
+     font-size: 16px;
+     border-radius: 8px;
+     cursor: pointer;
+ }
+ .container{
+     max-width: 1140px;
+     margin: 0 auto;
+ }
+ .hero{
+     display: flex;
+     height: auto;
+     margin: 70px auto;
+ }
+ .hero_left button{
+     background-color: #00CCCC;
+     font-size: 18px;
+     font-weight: bold;
+     width: 208px;
+     height: 60px;
+     border-radius:  14px;
+     border: none;
+     outline: none;
+     box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+ }
+ .hero_left h1{
+     font-size: 55px;
+     line-height: 80px;
+     margin-bottom: 50px;
+ }
+ .hero_left{
+     width: 50%;
+ }
+ .hero_right #trees{
+     width: 732px;
+    height: 640px;
+    margin-top: -103px;
+ }
+ .hero_right{
+     width: 85%;
+     position: relative;
+ }
+ .hero_right #hero_image{
+     position: absolute;
+     /* height: 537px; */
+    bottom: 4px;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .features{
+     display:flex;
+      margin: 100px auto;
+      justify-content: space-between ;
+ }
+ .features .feature{
+     width: auto;
+     max-width: 325px;
+     margin: 20px 0;
+ }
+ .features h2{
+     margin-top: 30px;
+ }
+ .features p{
+     margin-top: 12px;
+     color: #576D81;
+     font-size: 16px;
+ }
+ .info {
+     display: flex;
+     align-items: center;
+     margin: 130px auto;
+     height: 540px;
+     background-color: #F4F5F6;
+     border-radius: 50px;
+ }
+ .info img{
+      width: 580px ;
+      height: 640px;
+ }
+ .info__description img{
+     width: 109px;
+     height: 10px;
+     margin-top: 50px;
+ }
+ .info .info__description h2{
+     font-size: 40px;
+     max-width: 195px;
+     margin: 20px 0;
+ }
+
+.info .info__description p{
+    max-width: 414px;
+    font-size: 16px;
+    color: #576D81;
+    line-height: 24px;
+}
+
+.benefits{
+    width: 100%;
+    height: 527px;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-bottom: 108px;
+    background-color: #F4F5F6;
+}
+.benefits__content{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.benefits__list{
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -37px;
+}
+.benefits__list_item{
+    width: 455px;
+    height: 179px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+}
+.benefits__list_item img{
+    width: 50px;
+    height: 50px;
+    margin-right: 23px;
+}
+.benefits__list_item:nth-child(2){
+    align-self: flex-end;
+}
+.benefits__list_item_desc{
+    margin-top: 13px;
+    max-width: 310px;
+}
+.benefits__list_item_desc h2{
+font-size: 25px;
+margin-bottom: 25px;
+}
+.benefits__list_item_desc p{
+    color: #576D81;
+    font-size: 16px;
+}
+#benefits-img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: -73px;
+}
+.info:last-child{
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.info:last-child {
+    padding: 50px;
+    justify-content: space-evenly;
+  }
+  
+  .connect__input {
+    width: 1520px;
+    height: 540px;
+    margin: 100px auto;
+  }
+  
+  .connect__input img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px auto;
+  }
+  
+  .connect__input h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .connect_div {
+    width: 680px;
+    height: 55px;
+    margin: 20px auto;
+  }
+  
+  #connect_text {
+    width: 394px;
+    height: 55px;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    border: 0;
+    background-color: #f0f0f2;
+  }
+  
+  #send {
+    width: 156px;
+    height: 55px;
+    background-color: #00cccc;
+    border: 1px solid #00cccc;
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin-left: 18px;
+    cursor: pointer;
+  }
+  
+  .appstore_playmarket img {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+  
+  .appstore_playmarket {
+    display: flex;
+    align-items: flex-end;
+    width: 394px;
+    height: 63px;
+    margin-left: 419px;
+  }
+  
+  #footer__last {
+    width: 1520px;
+    height: 297px;
+    background-color: #0f2336;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  #leaf_left {
+    margin-left: 0;
+    margin-top: -65px;
+  }
+  
+  #leaf_right {
+    display: flex;
+    padding-left: 96px;
+  }
+  
+  #footer__last_last {
+    width: 1520px;
+    height: 142px;
+    margin: 85px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #contacts {
+    width: 550px;
+    height: 90;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #contacts h6 {
+    color: #00cccc;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  #contacts p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.39px;
+  }
+  
+  #logo_end {
+    margin-top: -10px;
+    margin-left: -90px;
+  }
+  #logo {
+    width: 130px;
+    height: 47px;
+    padding-top: 0;
+    padding-left: 0;
+  }

@@ -1,0 +1,57 @@
+.container-cards {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #001731;
+  align-items: center;
+}
+
+.card1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #398bff !important;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn1 {
+  background-color: #398bff;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.topicListBtn {
+  width: 60px !important;
+  height: 60px !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+.card-img-top {
+  height: 170px;
+}
+
+.topicListLook {
+  width: 130px;
+  height: 40px;
+  color: #398bff !important;
+  background-color: #001731 !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+}
+
+.topicListLook:hover {
+  transition: 0.1s;
+  color: #aac0e0 !important;
+}

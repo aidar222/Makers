@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ! link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ! Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">КОМПАНИЯ ШОРО</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#groups">Наши напитки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Свяжитесь с нами</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <!--! Section 1 -->
+    <div class="bg-light text-dark p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between mt-5">
+                <div>
+                    <h1>Команда ШОРО <br><span class="text-danger">Приветствует вас</span></h1>
+                    <p class="lead my-4">Приготовленные по традиционному рецепту и с большой любовью, национальные напитки от компании «Шоро» обладают лечебными свойствами, изысканным вкусом и ароматом, а также утоляют жажду и голод. Вкус радости и здоровья!</p>
+                    <button class="btn btn-primary">Заказать напиток!</button>
+                </div>
+                <img class="w-50 d-none d-md-block" src="https://cdnimg.rg.ru/pril/article/170/30/33/RGS.10.14_2_850.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Карточки -->
+    <div class="container text-center my-5">
+        <h2 id="groups" class="title text-danger">Наши напитки</h2>
+    </div>
+    
+    <!--! Carousel  -->
+    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="row">
+           <!-- Cards -->
+           <div class="col-3">
+           <div class="card" style="width: 18rem;">
+            <img class="" src="https://pbs.twimg.com/media/Ec8PHvZXYAAWFi4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Чалап</h5>
+              <p class="card-text">Чалап — общее название кисломолочного напитка или молочного супа.</p>
+              <a href="#" class="btn btn-primary">Заказать</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+             <img class="" src="https://i.mycdn.me/i?r=AyENid1PUfRjbfTS8I1wumQ-YNC8wlPTG93uG8bw60ECbw" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Максым</h5>
+               <p class="card-text">Максым - напиток, изготавливается в основном из ячменя.</p>
+               <a href="#" class="btn btn-primary">Заказать</a>
+             </div>
+           </div>
+         </div>
+         <div class="col-3">
+            <div class="card" style="width: 18rem;">
+             <img class="" src="https://pbs.twimg.com/media/EV3YIyVXkAEOaKs.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Аралаш</h5>
+               <p class="card-text">Кисломолочный напиток со злаками, обогащенный пробиотическими культурами.</p>
+               <a href="#" class="btn btn-primary">Заказать</a>
+             </div>
+           </div>
+         </div>
+         <div class="col-3">
+            <div class="card" style="width: 18rem;">
+             <img class="" src="data:image/jpeg;base64,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"    class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Квас</h5>
+               <p class="card-text">Квас обладает приятным кисловато-сладким вкусом и ароматом ржаного хлеба.</p>
+               <a href="#" class="btn btn-primary">Заказать</a>
+             </div>
+           </div>
+         </div>
+          <!-- Cards finish -->
+        </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+         <!-- Cards -->
+         <div class="col-3">
+         <div class="card" style="width: 18rem;">
+          <img class="" src="https://pbs.twimg.com/media/EVstWxWXsAE3Qxz.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Жарма</h5>
+            <p class="card-text">Жарма — киргизский национальный прохладительный напиток.</p>
+            <a href="#" class="btn btn-primary">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+          <div class="card" style="width: 18rem;">
+           <img class="" src="data:image/jpeg;base64,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m3CatHRrlio17QBJ4jTx4Xncw2NQoS6gGmllYC5yKhOUkm9+z/cJnOKndEWrRxq3GcZcrkBMot2QOI58PSac6W1KgICgg5WOotbiLfKc2b0vdgIkM1piLEzpaM0TDmPOTFhERAREQEREBESsC0i8iIFolYgWUaw51lYgJktYeMxiXdrwKTYp8PSa675u4QA1EB41EHuwkHXqraoeHavNvHsclr6EC4523T1dVQd4B8xeaGJpIe8in/qJ5Z1rq47K8e20mWoXCrm6sUhcZgAFC3sd5sOPMyg22y1C2Ve1XTEMBmF2QEW37jmJ856DE4Cj/wAajyzfoZz32dRv3Pm37y9XDwPOYirnJtcKGYqtyQoYk5R7xU7s9CuBpfAPUX/GdGlSQLZVA04KB85evEdoHj0zCndgdW0JB19TMRcz0XSFfqlPKoPmrTzc6aeW7G0IiJ1CIiAiIgIiICIiAiIgIiICIiAiIgIiICZKD5XVvhdW9iDMd5BMyPrbmaGIaZsNW6yij/HTR/dQZz6j6kc90+dMUrHWYc/xP4zSc/8A36zJVaYGaBM2adQFTrc8ZzcViOrQtxPZXzMjAMR6jWBHSBvqlHOoPkrTzk7PSGr3F8C34AfrONee3RisYCJEmdkIiICIiAiIgIiICIiAiIgIiICIiAkSYgVMowmSTaZHreiu2ENHqXYB6d8oJ7yHXTmRci3K019q7bpIxu4XKb79bj+XeZ5d6SneAZhODT4R7CcctC5u1e0weMTEUxUpnRvcEb1PiIqCeUwTPRv1bZQ28WBB8bHj4zJWxVR1KlzYixtpod4vOc6GV8DBtDbKVKtlbs0zlB4E/ab9PSdzZuMRrG4AAuSSALc7zzq4FBwEy06CruUc5roeo2dqYrrapZe6AFXyF9fUkn1muJciLT0RjERUIgQJMTQREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/2Q==" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Тан</h5>
+             <p class="card-text">Тан - напиток, изготавливается в основном из ячменя.</p>
+             <a href="#" class="btn btn-primary">Заказать</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-3">
+          <div class="card" style="width: 18rem;">
+           <img class="" src="https://pbs.twimg.com/media/D-oMIyKX4AAMTW_.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Легенда</h5>
+             <p class="card-text">Миниральная вода</p>
+             <a href="#" class="btn btn-primary">Заказать</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-3">
+          <div class="card" style="width: 18rem;">
+           <img class="" src="https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRYVOKxcCgnWC5TyyRkPBIpg&fn=w_612"    class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Бозо</h5>
+             <p class="card-text">Бозо - сладкий ячменевый напиток</p>
+             <a href="#" class="btn btn-primary">Заказать</a>
+           </div>
+         </div>
+       </div>
+        <!-- Cards finish -->
+      </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Section 2 -->
+      <!-- Аккордеон -->
+      <div id="aboutUs" class="p-5">
+      <div class="container">
+          <h2 class="text-center mb-4 text-danger"></h2>
+          <!-- Accordion -->
+          <h2 class="text-danger text-center">О нас</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    ПРОДУКЦИЯ КОМПАНИИ
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Родниковая вода Tien-Shan Legend проходит несколько ступеней очистки, но при этом ее состав остается неизменным, она по-прежнему «живая», и прекрасно подходит как для пищевых, так и для бытовых целей. К примеру, многие потребители используют родниковую воду для купания младенцев, а также применяют ее в аквариумах.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  О КОМПАНИИ
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">ОСНОВАТЕЛИ КОМПАНИИ — БРАТЬЯ ЭГЕМБЕРДИЕВЫ
+                    Эгембердиев Таабалды Бердигулович (14.01.1951 — 16.05.2015)
+                    Учредитель и президент компании «Шоро», создатель уникального проекта  — этно-комплекса «Супара»  и «Супара Чункурчак».</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  КЛИЕНТАМ
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Мы предоставляем широкий спектр товаров с целью удовлетворения различных потребностей наших клиентов (родниковая вода «Легенда», газированная родниковая вода «Байтик», минеральная — лечебно столовая вода «Ыссык-Ата», минеральная вода «Арашан» и «Ыссык-Ата» в стекле )
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Finish Accordion -->
+      </div>
+    </div>
+    <!-- Section 3 -->
+    <div id="contacts" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h2 class="text-center mb-4 text-danger">Контакты</h2>
+                    <ul class="list-group lead">
+                        <li class="list-group-item"> <span class="fw-bold"> Адрес:</span>Рабочий Городок</li>
+                        <li class="list-group-item"> <span class="fw-bold"> Номер:</span>0555555555</li>
+                        <li class="list-group-item"> <span class="fw-bold"> Почта:</span>Shoro@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="p-5 bg-danger text-center text-light">
+        <div> 
+           <p class="lead">Copyright @ 2022 SHORO</p>
+        </div>
+    </footer>
+    <!-- ! JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

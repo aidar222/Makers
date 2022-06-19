@@ -1,0 +1,168 @@
+/* Второй способ подключения шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+}
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+/* --------------HEADER START-------------- */
+.logo {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+nav {
+  display: inline;
+  margin-left: 282px;
+}
+
+nav span {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 70px;
+}
+header {
+  padding-left: 250px;
+  padding-top: 65px;
+}
+
+#bg-1 {
+  background-image: url(../images/BG.png);
+  height: 1050px;
+}
+
+header div {
+  display: inline;
+}
+
+#btn-login {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4237px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  margin-right: 18px;
+}
+#btn-signUp {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #bb6df3;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+/* -----------HEADER FINISH------------ */
+
+/* -----------SECTION-1 START---------- */
+
+.section-1 {
+  padding-left: 250px;
+  padding-top: 189px;
+  display: flex;
+}
+.section-1Right h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #3b668d;
+  margin: 0;
+}
+
+.section-1Right span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.905em;
+  color: #3b668d;
+}
+
+.section-1Right hr {
+  background-color: #3b668d;
+  height: 2px;
+  margin-top: 32px;
+  border: none;
+  width: 520px;
+}
+
+.section-1Right h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 156%;
+  text-transform: uppercase;
+  color: #3b668d;
+}
+
+.section-1Right p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.075em;
+  color: #2b4964;
+}
+.section-1Right button {
+  background: linear-gradient(90deg, #5ac4ff 0%, #b250ff 100%);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 62px;
+  width: 308px;
+  height: 79px;
+  left: 352px;
+  top: 745px;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  border: 1px solid linear-gradient(90deg);
+}
+#imgGroup {
+  width: 815px;
+  left: 43.56%;
+}
+/* -----------SECTION-1 FINISH---------- */
+/* -----------SECTION-2 START------------*/
+.section-2__left {
+  background-image: url(../images/Features_image.png);
+  width: 1153px;
+  height: 1166px;
+  background-size: cover;
+}
+.section-2__left img {
+  padding-top: 138px;
+}
+.block__bg-icon {
+  background-image: url(../images/bg-icon.png);
+  width: 93px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right__blocks {
+  display: flex;
+}
+.section-2 {
+  display: flex;
+}

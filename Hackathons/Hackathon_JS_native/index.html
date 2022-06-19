@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <div class="title">BOMBA COFFEE</div>
+      <ul>
+        <li>Кофе</li>
+        <li>Чай</li>
+        <li>Холодные напитки</li>
+        <li>Алкоголь</li>
+      </ul>
+      <div>
+        <button class="btn" id="myBtn">Заказ</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <span>Напиток:</span>
+            <input type="text" placeholder="Выберите напиток" class="taskFirst" />
+            <br>
+            <span>Добавки к напитку:</span>
+            <input type="text" placeholder="Выберите добавку" class="taskSecond" />
+            <div class="field">
+              <button class="btn1">Добавить</button>
+            </div>
+            <div class="container1" id="inModal">
+              <ul class="task-list"></ul>
+              <ul class="task-adds"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text">Everyone need to have a cup of coffee</div>
+    </div>
+    <video loop="loop" autoplay="" muted="">
+      <source
+        src="./BOMBA COFFEE Promotional Video  _ Epic B-roll sequence _ All Handheld _ Daniel Schiffer Inspired.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

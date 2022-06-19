@@ -1,0 +1,75 @@
+/* ? Псевдокласс hover - реагирует при наведении курсора */
+/* h2::псевдокласс{свойство и значение} */
+#btnClick:hover {
+background-color: red;
+}
+/* ? Псевдоклассы для ссылок */
+/* link - для стилизации ссылки еще не посещенным поьзователем */
+a:link{
+    color: aqua;
+}
+/* active - используется для активной ссылки (по которой совершается клик или на которой удерживаеся кнопка мыши) */
+a:active{
+    color: grey;
+}
+/* ! Псевдокласс для input */
+/* focus - пр именяется, когда элемент получает фокусировку (когда кликаем на поле ввода)  */
+input:focus{
+    background-color: aqua;
+}
+/* target - можно выделять ту часть страницы на которую перенаправило ссылка */
+#p1:target{
+border: 2px solid gray;
+background-color: yellow;
+}
+#p2:target{
+    border: 2px solid gray;
+    background-color: violet;
+}
+li:first-child{
+    color: coral;
+}
+li:last-child{
+    color: tomato;
+}
+li:nth-child(4){
+    color: slateblue;
+}
+/* nth-child even - четный */
+li:nth-child(even){
+    background-color: palegoldenrod;
+}
+/* odd - нечетный */
+li:nth-child(odd){
+    background-color: darkolivegreen;
+}
+/* каждый второй(n) и тд */
+li:nth-child(2n){
+    border: 3px solid black;
+}
+/* ! Псевдоэлементы */
+/* h2::псевдоэлемент{
+    свойство:значение} */
+span::before{
+    content: "†";
+    font-size: 80px;
+}
+span::after{
+    content: "∆";
+}
+/* Первая заглавная буква */
+p::first-letter{
+    color: gold;
+    font-size: 40px;
+    font-style: italic;
+}
+/* Первая строка */
+p::first-line{
+    color: tomato;
+    text-transform: uppercase;
+}
+/* можно контролировать вид выделяемого */
+p::selection{
+background-color: pink;
+}
+

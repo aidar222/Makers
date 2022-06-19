@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+}
+.container{
+    background-image: url(https://www.rabstol.net/uploads/gallery/main/354/rabstol_net_fields_13.jpg);
+    height: 100vh;
+    background-size: cover;
+    /* Display-flex */
+    display: flex;
+    /* Justify-content - выравнивание по горизонтальной оси */
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    /* выравнивание по вертикальной оси */
+    align-items: center;
+    align-items: flex-start;
+    align-items: baseline;
+
+    /* Flex Direction - измениние оси */
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: row;
+    /* Flex wrap - работа при недостаточном размере экрана */
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+.blocks{
+    width: 180px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+}
+.blocks img{
+    width: 150px;   
+}
+.blocks p{
+    font-size: 30px;
+    background-color: rgba(247, 220, 134, 0.726);
+}
+/* #block-5 img {
+height: 450px;
+} */
+#block-5{
+    order: -2;
+
+}
+#block-3{
+    order: -1;
+}

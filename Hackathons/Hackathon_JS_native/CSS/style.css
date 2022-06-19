@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  position: fixed;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  background-position: auto;
+}
+
+.title {
+  width: 100vw;
+  text-align: left;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 35px;
+  margin-top: 2vh;
+  margin-left: 4px;
+}
+
+.text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 4vw;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  margin-top: 40vh;
+}
+
+.btn {
+  color: white;
+  position: relative;
+  float: right;
+  top: -5vh;
+  right: 5vw;
+  transition: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: solid 2px black;
+  background-color: violet;
+  text-align: center;
+  border-radius: 20px;
+  width: 10vw;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  top: 0;
+  width: 30%;
+  height: 40%;
+  overflow: auto;
+  margin-left: 70%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: violet;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid violet;
+  box-shadow: violet;
+  border-radius: 20px;
+  height: 15%;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  border: solid 2px red;
+}
+
+ul {
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  margin-top: -6vh;
+}
+
+ul li {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  border: solid 1px violet;
+  padding: 2vh;
+  cursor: pointer;
+  transition: 1s;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  border-radius: 20px;
+}
+
+ul li:hover {
+  box-shadow: 0px 0px 15px 2px violet;
+}
+

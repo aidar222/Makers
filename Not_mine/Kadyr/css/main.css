@@ -1,0 +1,103 @@
+form{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+input{
+    width: 394px;
+    height: 55px;
+    background: #F0F0F2;
+    border: 1px solid #F0F0F2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.35);
+}
+input.submit {
+    width: 156px;
+    height: 55px;
+    color: black;
+    background: #00CCCC;
+    border: 1px solid #00CCCC;
+    box-sizing: border-box;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+svg.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+h1.enjoy{
+    position: relative;
+    height: 120px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    /* or 120% */
+
+    text-align: center;
+
+    color: #0F2336;
+}
+.footer{
+    margin-top: 110px;
+    position: absolute;
+    width: 100%;
+    height: 297px;
+    left: 0%;
+    background: #0F2336;
+    border-radius: 0px;
+}
+svg.leaf{
+    position: absolute;
+    left: 0;
+    bottom: 0.44%;
+}
+svg.bottle{
+    position: relative;
+    height: 49px;
+    left: 255px;
+    margin-top: 55px;
+}
+svg.leafs{
+    position: absolute;
+    left: 1375px;
+    top: 14.81%;
+    bottom: -12.12%;
+
+}
+.text{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    letter-spacing: 0.1px;
+
+    color: #00CCCC;
+}
+.graytext{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    letter-spacing: 0.39px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+}

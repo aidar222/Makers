@@ -1,0 +1,10 @@
+.react-icon{
+    border: 2px solid black;
+    border-radius: 50px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+};
+
+.react-icon:hover{
+    transform: scale(1.1);
+}

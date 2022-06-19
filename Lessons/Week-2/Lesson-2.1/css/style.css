@@ -1,0 +1,186 @@
+.container {
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+    margin: 0 auto;
+    /* overflow -  чтобы не скролился контейнер */
+    overflow: hidden;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    /* название анимации (keyframes) */
+    animation-name: block ;
+    /* Определяет время, в течении которого должен пройти  один круг анимации */
+    animation-duration: 10s;
+    /* настраивается ускорение анимации */
+    animation-timing-function: ease-in-out;
+    /* настраивает задержку повторений */
+    animation-delay: 2s;
+    /* Определяет кол-во повторений */
+    animation-iteration-count: infinite;
+    /* дает возможность при каждом повторе анимации идти по альтернативному пути */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* Универсальное свойствоь для анимации */
+    animation: block 5s ease-in-out 2s infinite alternate;
+}
+
+@keyframes block {
+    /* от каких свойств начинать */
+    from {
+        margin: 0;
+    }
+    /* до какиз свойств изменится */
+    to {
+        margin-top: 300px;
+        margin-left: 800px;
+    }
+}
+
+@keyframes block {
+    0% {
+        margin: 0;
+    }
+    25% {
+        margin-top: 100px ;
+        margin-left: 600px;
+    }
+    50% {
+        margin-top: 150px;
+        margin-left: 400px;
+    }
+    100% {
+        margin-top: 300px;
+        margin-left: 800px;
+    }
+}
+/* -------------animation football--------- */
+#gif {
+    width: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#ball {
+    width: 50px;
+    position: absolute;
+    top: 660px;
+    left: 1220px;
+    z-index: 2;
+    animation: ball 1s linear 0s infinite alternate;
+}
+#Gif {
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+@keyframes ball {
+    from {
+       top: 660px; 
+       left: 1220px;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+ #road {
+     width: 1100px;
+     position: fixed;
+     z-index: 1;
+ }
+ #people {
+     position: absolute;
+     z-index: 2;
+     animation: animation1 8s infinite 0s 1 alternate;
+ }
+ #police {
+     position: absolute;
+     z-index: 2;
+     animation: animation1 8s linear 1s 1;
+ }
+ @keyframes animation1 {
+     0% {
+         margin-top: 300px;
+
+     }
+     100% {
+         margin-top: 300px;
+         margin-left: 800px;
+     }
+ }
+ /* spinner */
+
+ body {
+     background-color: rgb(0, 0, 0);
+ }
+ .loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #0dc5c200;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+
+

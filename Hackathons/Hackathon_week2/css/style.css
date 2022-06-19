@@ -1,0 +1,89 @@
+body {
+    background-image: url(./assets/header.jpeg);
+}
+.nav-link {
+    color: white !important;
+}
+#maslo {
+    width: 100%;
+    position: relative;
+}
+#podval {
+    position: absolute;
+    top: 118px;
+    left: 80px;
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+    animation: slideIn 2s ease-in;
+}
+#baksy {
+    position: absolute;
+    top: 309px;
+    left: 1093px;
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+    animation: slideIn 2s ease-in;
+}
+@keyframes slideIn {
+    from {
+        margin-left: 16%;
+        width: 300%;
+    }
+    to { 
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+.container h1 {
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+}
+.container p {
+    font-family: "Amatic SC";
+    font-size: 35px;
+    font-weight: 700;
+}
+#photo {
+    display: flex;
+    order: -1;
+}
+.video {
+    margin-top: 200px;
+}
+.youtube {
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+#vidos {
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.vidos-text {
+    margin-bottom: 45px;
+}
+#contacts {
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+}
+.footer__text {
+    display: flex;
+    justify-content: space-between;
+}
+.progress {
+    margin-top: 60px;
+}
+.percent {
+    font-family: "Amatic SC";
+    font-size: 50px;
+    font-weight: 700;
+    color: red;
+    margin-top: 40px;
+}

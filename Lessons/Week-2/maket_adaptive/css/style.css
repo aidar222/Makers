@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Согласно спецификации CSS ширина блока складывается из ширины содержимого (width), значений margin, padding и border. Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить этот алгоритм, чтобы свойства width и height задавали размеры не содержимого, а размеры блока. */
+  /* border-box - Свойства width и height включают в себя значения padding и border, но не margin. */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #192252;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+/* ======================== */
+/*!  HEADER */
+/* ======================== */
+
+.header {
+  padding: 35px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #192252;
+}
+
+.burger-icon,
+.burger-check,
+.burger-close {
+  display: none !important;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 20px;
+  color: #192252;
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  color: #1c31a5;
+  text-decoration: underline;
+}
+
+.btn {
+  font-weight: 500;
+  color: #fff;
+  padding: 0.87rem 1rem;
+  background-color: #0e1734;
+  border: none;
+  border-radius: 4px;
+}
+
+/* ======================== */
+/*!  HERO */
+/* ======================== */
+
+.hero {
+  padding: 80px 0px;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__info {
+  max-width: 587px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  /* font-size: 48px; */
+  margin-top: -140px;
+  line-height: 4.5rem;
+  /* line-height: 72px; */
+}
+
+.hero__text {
+  font-size: 1.13rem;
+  /* font-size: 18px; */
+  color: #848fac;
+  font-weight: 400;
+  margin: 1.5rem 0 2rem;
+
+  max-width: 485px;
+}
+
+.hero__img {
+  width: 50%;
+  /* max-width: 50%; */
+}
+
+.hero__btn {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+/* ! TABLET 768px */
+@media all and (max-width: 768px){
+  html{
+    font-size: 13px;
+  }
+  .hero__title{
+    margin-top: 0;
+  }
+  .hero__info{
+    margin-top: -50px;
+  }
+}
+/* ! MOBILE 423PX */
+@media all and (max-width: 425px){
+  /* Стили для меню, когда я нажимаю на иконку бургер */
+  .nav__list{
+    display: none;
+  }
+  .burger-icon{
+    display: block !important;
+  }
+  .header__middle {
+    order: 1;
+  }
+  .burger-check {
+    display: block !important;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 40px;
+    opacity: 0;
+    z-index: 2;
+  }
+  /* + - селектор след-его соседнего элемента */
+  .burger-check:checked + .nav__list {
+    display: block;
+    position: absolute;
+    padding: 85px 30px 40px;
+    background-color: rgb(111, 111, 178);
+    color: white;
+    right: 0;
+    top: 0;
+  }
+  /* ~ - селектор следующих элеметов (на одном уровне) */
+  .burger-check:checked ~ .burger-close {
+    display: block !important;
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+  }
+}

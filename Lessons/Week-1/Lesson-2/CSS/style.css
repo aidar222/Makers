@@ -1,0 +1,21 @@
+    h1
+    {
+    color: blue;
+     font-size: 30px;
+     font-weight: 400;
+    background-color: yellow;
+    }
+    div
+    {background-color: brown;
+        width: 100px; 
+        height: 100px; 
+        color: white; 
+        font-size: 25px; 
+        text-align: center;
+    }
+.blocks {
+    background-color: tomato;
+    color: yellow;
+    width: 400px;
+    height: 400px;
+}

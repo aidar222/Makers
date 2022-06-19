@@ -1,0 +1,52 @@
+html{
+    font-size: 10px;
+}
+.container{
+    max-width: 1000px;
+    width: 70vw;
+    min-width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    /* em - относительно размера (текущего)  шрифта элемента*/
+    /* font-size: 2em; */
+    font-size: 1.8rem;   
+    text-align: center;   
+    align-items: center;
+}
+.block:nth-child(even){
+    background-color: yellow;
+}
+.block:nth-child(odd){
+    background-color: green;
+}
+/* media запросы */
+@media all and (max-widht: 600px){
+    .block{
+        font-size: 3.2rem;
+        color: white;
+    }
+    .block:nth-child(even) {
+        background-color: red;
+    }
+}
+.blocks{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+.absolute{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: 100px ;
+    left: 450px;
+    
+}
